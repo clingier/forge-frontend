@@ -6,9 +6,7 @@ import "./basehub.config";
 
 const token = keys().BASEHUB_TOKEN;
 
-const basehub = token
-  ? basehubClient({ token })
-  : null;
+const basehub = token ? basehubClient({ token }) : null;
 
 /* -------------------------------------------------------------------------------------------------
  * Common Fragments
