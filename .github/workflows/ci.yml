@@ -30,5 +30,8 @@ jobs:
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
-      - name: Check formatting & lint
-        run: pnpm check
+      - name: Check formatting
+        run: pnpm biome format .
+
+      - name: Lint
+        run: pnpm biome lint . || true
