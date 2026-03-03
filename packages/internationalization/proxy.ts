@@ -10,7 +10,8 @@ const I18nMiddleware = createI18nMiddleware({
   locales,
   defaultLocale: "en",
   urlMappingStrategy: "rewriteDefault",
-  resolveLocaleFromRequest: (request: NextRequest) => {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any -- Workaround for Vercel duplicate react/next module resolution
+  resolveLocaleFromRequest: (request: any) => {
     const headers = Object.fromEntries(request.headers.entries());
     const negotiator = new Negotiator({ headers });
     const acceptedLanguages = negotiator.languages();
@@ -21,7 +22,8 @@ const I18nMiddleware = createI18nMiddleware({
   },
 });
 
-export const internationalizationMiddleware = (request: NextRequest) =>
+// eslint-disable-next-line @typescript-eslint/no-explicit-any -- Workaround for Vercel duplicate react/next module resolution
+export const internationalizationMiddleware = (request: any): any =>
   I18nMiddleware(request);
 
 export const config = {
