@@ -9,6 +9,7 @@ import {
   PopoverContent,
   PopoverTrigger,
 } from "@repo/design-system/components/ui/popover";
+import { Textarea } from "@repo/design-system/components/ui/textarea";
 import { cn } from "@repo/design-system/lib/utils";
 import type { Dictionary } from "@repo/internationalization";
 import { format } from "date-fns";
@@ -100,10 +101,10 @@ export const ContactForm = ({ dictionary }: ContactFormProps) => {
                 <Input id="lastname" type="text" />
               </div>
               <div className="grid w-full max-w-sm items-center gap-1">
-                <Label htmlFor="picture">
-                  {dictionary.web.contact.hero.form.resume}
+                <Label htmlFor="usecase">
+                  {dictionary.web.contact.hero.form.useCase}
                 </Label>
-                <Input id="picture" type="file" />
+                <Textarea id="usecase" rows={4} />
               </div>
 
               <Button className="w-full gap-4">

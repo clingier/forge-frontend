@@ -19,169 +19,165 @@
     },
     "home": {
       "meta": {
-        "title": "Transform Your Business Operations Today",
-        "description": "In today's fast-paced world, your business deserves better than outdated trading systems. Our innovative platform streamlines operations, reduces complexity, and helps small businesses thrive in the modern economy."
+        "title": "Cryptographic Lineage for Every Data Asset",
+        "description": "Forge is an asset materialization engine that produces cryptographic proof of lineage as a natural byproduct of execution. No inference gaps, no metadata sync lag — just verifiable truth baked into every output."
       },
       "hero": {
         "announcement": "Read our latest article"
       },
       "cases": {
-        "title": "Empowering Success Stories Across the Globe"
+        "title": "Trusted by Platform Teams Building Verifiable Data Infrastructure"
       },
       "features": {
-        "title": "Powerful Tools for Modern Business",
-        "description": "Discover how our cutting-edge features can revolutionize your daily operations.",
+        "title": "Built for Verifiable Data Pipelines",
+        "description": "Forge replaces fragile metadata layers with cryptographic proofs generated at execution time. Every asset carries its own lineage.",
         "items": [
           {
-            "title": "Streamlined Operations",
-            "description": "Our platform streamlines operations, reduces complexity, and helps small businesses thrive in the modern economy."
+            "title": "Cryptographic Lineage",
+            "description": "Every materialized asset is stamped with a cryptographic hash linking it to its source inputs. Lineage isn't inferred — it's produced."
           },
           {
-            "title": "Real-Time Analytics",
-            "description": "Get instant insights into your business performance with comprehensive analytics and reporting tools."
+            "title": "Concentric Rings Architecture",
+            "description": "Start embedded in a single binary (Ring 0), scale to Kubernetes with PostgreSQL (Ring 2), or run a full HA platform (Ring 3). Same code, same API at every ring."
           },
           {
-            "title": "Automated Workflows",
-            "description": "Save time and reduce errors with intelligent automation that handles repetitive tasks for you."
+            "title": "Incremental Materialization",
+            "description": "Forge tracks dependency graphs and only re-materializes what has changed. No wasted compute, no stale outputs."
           },
           {
-            "title": "Secure Transactions",
-            "description": "Rest easy knowing your business operations are protected by enterprise-grade security and encryption."
+            "title": "Native Ecosystem Integration",
+            "description": "First-class support for Arrow, Polars, DataFusion, and Kafka. Embed Forge into existing Rust pipelines without rewrites."
           }
         ]
       },
       "stats": {
-        "title": "Real Results, Real Impact",
-        "description": "Join thousands of businesses that have transformed their operations with our platform. Our solutions have helped companies reduce administrative overhead by 60% and increase trading efficiency by 45% on average.",
+        "title": "Engineered for Production",
+        "description": "Forge is built for teams that need verifiable data infrastructure without the overhead. Every number here is a design constraint, not a marketing claim.",
         "items": [
           {
-            "title": "Monthly active users",
-            "metric": "100000",
-            "delta": "10",
-            "type": "unit"
+            "title": "Audit response time",
+            "metric": "Minutes",
+            "unit": "not days"
           },
           {
-            "title": "Daily active users",
-            "metric": "10000",
-            "delta": "-5",
-            "type": "unit"
+            "title": "Binary footprint",
+            "metric": "~500",
+            "unit": "KB"
           },
           {
-            "title": "Monthly recurring revenue",
-            "metric": "100000",
-            "delta": "20",
-            "type": "currency"
+            "title": "Memory per asset",
+            "metric": "~500",
+            "unit": "KB"
           },
           {
-            "title": "Cost per acquisition",
-            "metric": "100",
-            "delta": "-10",
-            "type": "currency"
+            "title": "Cold start",
+            "metric": "< 5",
+            "unit": "ms"
           }
         ]
       },
       "testimonials": {
-        "title": "Hear from Our Thriving Community",
+        "title": "What Early Users Are Saying",
         "items": [
           {
-            "title": "Best decision",
-            "description": "Our goal was to streamline SMB trade, making it easier and faster than ever and we did it together.",
+            "title": "Finally, real lineage",
+            "description": "We replaced our entire metadata inference layer with Forge. The cryptographic proofs gave our compliance team something they could actually verify independently.",
             "author": {
-              "name": "Hayden Bleasel",
-              "image": "https://github.com/haydenbleasel.png"
+              "name": "Early Adopter",
+              "image": ""
             }
           },
           {
-            "title": "Game changer",
-            "description": "This platform revolutionized how we handle our day-to-day operations. The efficiency gains have been remarkable.",
+            "title": "From prototype to production in a week",
+            "description": "We started with Ring 0 embedded in a single CLI tool. Two weeks later we were running the same code on Kubernetes. No rewrites.",
             "author": {
-              "name": "Lee Robinson",
-              "image": "https://github.com/leerob.png"
+              "name": "Early Adopter",
+              "image": ""
             }
           },
           {
-            "title": "Exceeded expectations",
-            "description": "Implementation was smooth and the results were immediate. Our team adapted quickly and productivity soared.",
+            "title": "Audit-ready from day one",
+            "description": "Our SOX auditors asked for proof of data provenance. We pointed them at the lineage hashes. The conversation was over in minutes, not weeks.",
             "author": {
-              "name": "shadcn",
-              "image": "https://github.com/shadcn.png"
+              "name": "Early Adopter",
+              "image": ""
             }
           },
           {
-            "title": "Outstanding support",
-            "description": "Not only is the platform powerful, but the customer support team has been exceptional in helping us maximize its potential.",
+            "title": "Lightweight and fast",
+            "description": "The sub-5ms cold start means we can embed Forge in request paths we never thought possible. It changed how we think about materialization.",
             "author": {
-              "name": "Pontus Abrahamsson",
-              "image": "https://github.com/pontusab.png"
+              "name": "Early Adopter",
+              "image": ""
             }
           }
         ]
       },
       "faq": {
-        "title": "Common Questions, Expert Answers",
-        "description": "Get quick answers to your most pressing questions about our platform. We've compiled everything you need to know about transforming your business operations and getting started with modern trading solutions.",
+        "title": "Common Questions, Straight Answers",
+        "description": "Forge is a new kind of tool — an asset materialization engine with cryptographic lineage baked in. Here's what teams usually want to know before evaluating it.",
         "cta": "Any questions? Reach out",
         "items": [
           {
-            "question": "What is the platform?",
-            "answer": "The platform is a trading platform that allows you to trade with confidence."
+            "question": "How is Forge different from dbt?",
+            "answer": "dbt is a SQL transformation layer that runs inside your warehouse. Forge is a general-purpose asset materialization engine that runs anywhere — embedded in a binary, as a standalone service, or on Kubernetes. Forge produces cryptographic lineage proofs; dbt produces metadata."
           },
           {
-            "question": "How secure is the platform?",
-            "answer": "Our platform employs enterprise-grade security measures, including end-to-end encryption and multi-factor authentication, to ensure your trading activities remain completely secure."
+            "question": "How does this compare to data catalogs like DataHub or Atlan?",
+            "answer": "Data catalogs like DataHub or Atlan observe your systems and infer lineage after the fact. Forge is the execution engine — it produces lineage as a natural byproduct of materialization. There's no inference gap, no metadata sync lag, and the lineage is independently verifiable."
           },
           {
-            "question": "What trading features are available?",
-            "answer": "The platform offers comprehensive trading tools including real-time market data, advanced charting, automated trading strategies, and detailed analytics to support informed decision-making."
+            "question": "Do I need to rewrite my entire pipeline?",
+            "answer": "No. Forge is a library, not a platform. You can adopt it incrementally — start with a single asset, embed it in an existing Rust binary, and expand from there. It integrates with Arrow, Polars, DataFusion, and Kafka."
           },
           {
-            "question": "How does pricing work?",
-            "answer": "We offer flexible pricing tiers designed to scale with your business needs, from starter plans for individual traders to enterprise solutions for large organizations."
+            "question": "What compliance standards does this support?",
+            "answer": "Forge's cryptographic lineage provides the verifiable audit trail needed for SOX, GDPR data subject access requests, and HIPAA data provenance requirements. Every materialized asset can be traced back to its sources with mathematical proof."
           },
           {
-            "question": "What kind of support do you provide?",
-            "answer": "Our dedicated support team is available 24/7 through multiple channels including live chat, email, and phone. We also provide extensive documentation and training resources."
+            "question": "How does it scale?",
+            "answer": "Forge uses a concentric rings architecture. Start embedded in a single binary (Ring 0), grow to a standalone orchestrator with SQLite state (Ring 1), scale to Kubernetes Jobs with PostgreSQL (Ring 2), or run a full HA platform with leader election (Ring 3). Same code, same API at every ring."
           }
         ]
       },
       "cta": {
-        "title": "Start Your Business Transformation",
-        "description": "Join thousands of forward-thinking businesses who have already modernized their operations. Our platform offers the tools, support, and efficiency you need to succeed in today's competitive market. Get started in minutes."
+        "title": "See the Proof",
+        "description": "Pick one reporting pipeline. Run it through Forge with lineage enabled. In two weeks, you'll know if you can produce a cryptographic proof of every output — and detect any tampering in between. Your data, your infrastructure, your numbers."
       }
     },
     "blog": {
       "meta": {
         "title": "Blog",
-        "description": "Thoughts, ideas, and opinions."
+        "description": "Updates, architecture decisions, and thinking behind Forge."
       }
     },
     "contact": {
       "meta": {
-        "title": "Let's Talk About Your Business",
-        "description": "Schedule a consultation with our team to discuss how we can help streamline your operations and drive growth for your business."
+        "title": "Let's Talk About Your Data Lineage",
+        "description": "Whether you're exploring cryptographic lineage for compliance, evaluating Forge for your platform team, or planning a proof of concept — we'd like to hear about your use case."
       },
       "hero": {
         "benefits": [
           {
-            "title": "Personalized Consultation",
-            "description": "Get tailored solutions and expert advice specific to your business needs."
+            "title": "Proof of Concept Scoping",
+            "description": "We'll help you identify the right asset pipeline to pilot and define success criteria for a two-week evaluation."
           },
           {
-            "title": "Seamless Integration",
-            "description": "We seamlessly integrate with your existing systems to ensure a smooth transition and minimal disruption."
+            "title": "Architecture Review",
+            "description": "Understand how Forge fits into your existing stack — which ring to start at, which integrations to enable, and how lineage flows through your dependency graph."
           },
           {
-            "title": "Expert Guidance",
-            "description": "Our team of experts will guide you through the process, ensuring you get the most out of our platform."
+            "title": "Compliance Mapping",
+            "description": "Map Forge's cryptographic lineage capabilities to your specific regulatory requirements, whether SOX, GDPR, HIPAA, or internal audit standards."
           }
         ],
         "form": {
-          "title": "Book a meeting",
+          "title": "Book a call",
           "date": "Date",
           "firstName": "First name",
           "lastName": "Last name",
-          "resume": "Upload resume",
-          "cta": "Book the meeting"
+          "useCase": "Tell us about your use case",
+          "cta": "Book the call"
         }
       }
     }
