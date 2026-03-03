@@ -44,10 +44,11 @@ const arcjetMiddleware = async (request: NextRequest) => {
 };
 
 // Compose non-Clerk middleware with Nemo
+// eslint-disable-next-line @typescript-eslint/no-explicit-any -- Workaround for duplicate react/next module resolution on Vercel causing phantom type mismatch
 const composedMiddleware = createNEMO(
   {},
   {
-    before: [internationalizationMiddleware, arcjetMiddleware],
+    before: [internationalizationMiddleware, arcjetMiddleware] as any[],
   }
 );
 
