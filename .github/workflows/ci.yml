@@ -35,3 +35,6 @@ jobs:
 
       - name: Lint
         run: pnpm biome lint . || true
+
+      - name: Validate Docs
+        run: pnpm -F docs lint
