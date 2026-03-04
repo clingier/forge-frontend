@@ -25,8 +25,9 @@
       "hero": {
         "announcement": "Read our latest article"
       },
-      "cases": {
-        "title": "Trusted by Platform Teams Building Verifiable Data Infrastructure"
+      "ecosystem": {
+        "title": "Built on the Rust Data Ecosystem",
+        "description": "Forge embeds into the FIDAP stack and the tools your platform team already runs — as a library, not a platform."
       },
       "features": {
         "title": "Built for Verifiable Data Pipelines",
