@@ -30,8 +30,10 @@ export const Hero = async ({ dictionary }: HeroProps) => (
       />
     </div>
 
-    {/* Gradient overlay for text readability */}
-    <div className="absolute inset-0 z-[1] bg-black/40" />
+    {/* Gradient overlay for text readability + smooth bottom fade */}
+    <div className="absolute inset-0 z-[1] bg-gradient-to-b from-black/40 via-black/30 to-background" />
+    {/* Bottom blur band for extra-smooth transition */}
+    <div className="absolute bottom-0 left-0 right-0 z-[1] h-24 backdrop-blur-md [mask-image:linear-gradient(to_top,black,transparent)]" />
 
     {/* Hero content */}
     <div className="relative z-[2] container mx-auto">
