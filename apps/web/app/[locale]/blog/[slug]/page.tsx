@@ -41,11 +41,7 @@ export const generateMetadata = async ({
   });
 };
 
-export const generateStaticParams = async (): Promise<{ slug: string }[]> => {
-  const posts = await blog.getPosts();
 
-  return posts.map(({ _slug }) => ({ slug: _slug }));
-};
 
 const BlogPost = async ({ params }: BlogPostProperties) => {
   const { slug } = await params;

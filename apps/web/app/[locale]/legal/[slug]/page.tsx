@@ -31,11 +31,7 @@ export const generateMetadata = async ({
   });
 };
 
-export const generateStaticParams = async (): Promise<{ slug: string }[]> => {
-  const posts = await legal.getPosts();
 
-  return posts.map(({ _slug }) => ({ slug: _slug }));
-};
 
 const LegalPage = async ({ params }: LegalPageProperties) => {
   const { slug } = await params;
