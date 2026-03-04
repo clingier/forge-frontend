@@ -16,7 +16,7 @@ export const Hero = async ({ dictionary }: HeroProps) => (
     {/* WebGL animated background */}
     <div className="absolute inset-0 z-0">
       <ColorBends
-        colors={["#ff5c7a", "#8a5cff", "#00ffd1"]}
+        colors={["#FF2A54", "#6914FF", "#00FFB2"]}
         rotation={0}
         speed={0.2}
         scale={1}
@@ -25,7 +25,7 @@ export const Hero = async ({ dictionary }: HeroProps) => (
         mouseInfluence={1}
         parallax={0.5}
         noise={0.1}
-        transparent={false}
+        transparent={true}
         autoRotate={0}
       />
     </div>
