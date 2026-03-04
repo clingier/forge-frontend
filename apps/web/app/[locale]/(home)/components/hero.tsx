@@ -5,14 +5,36 @@ import type { Dictionary } from "@repo/internationalization";
 import { MoveRight, PhoneCall } from "lucide-react";
 import Link from "next/link";
 import { env } from "@/env";
+import ColorBends from "@/components/color-bends";
 
 type HeroProps = {
   dictionary: Dictionary;
 };
 
 export const Hero = async ({ dictionary }: HeroProps) => (
-  <div className="w-full">
-    <div className="container mx-auto">
+  <div className="relative w-full overflow-hidden">
+    {/* WebGL animated background */}
+    <div className="absolute inset-0 z-0">
+      <ColorBends
+        colors={["#ff5c7a", "#8a5cff", "#00ffd1"]}
+        rotation={0}
+        speed={0.2}
+        scale={1}
+        frequency={1}
+        warpStrength={1}
+        mouseInfluence={1}
+        parallax={0.5}
+        noise={0.1}
+        transparent={false}
+        autoRotate={0}
+      />
+    </div>
+
+    {/* Gradient overlay for text readability */}
+    <div className="absolute inset-0 z-[1] bg-black/40" />
+
+    {/* Hero content */}
+    <div className="relative z-[2] container mx-auto">
       <div className="flex flex-col items-center justify-center gap-8 py-20 lg:py-40">
         <div>
           <Feed queries={[blog.latestPostQuery]}>
@@ -32,15 +54,15 @@ export const Hero = async ({ dictionary }: HeroProps) => (
           </Feed>
         </div>
         <div className="flex flex-col gap-4">
-          <h1 className="max-w-2xl text-center font-regular text-5xl tracking-tighter md:text-7xl">
+          <h1 className="max-w-2xl text-center font-regular text-5xl tracking-tighter md:text-7xl text-white drop-shadow-lg">
             {dictionary.web.home.meta.title}
           </h1>
-          <p className="max-w-2xl text-center text-lg text-muted-foreground leading-relaxed tracking-tight md:text-xl">
+          <p className="max-w-2xl text-center text-lg leading-relaxed tracking-tight md:text-xl text-white/80 drop-shadow-md">
             {dictionary.web.home.meta.description}
           </p>
         </div>
         <div className="flex flex-row gap-3">
-          <Button asChild className="gap-4" size="lg" variant="outline">
+          <Button asChild className="gap-4 border-white/30 text-white hover:bg-white/10" size="lg" variant="outline">
             <Link href="/contact">
               Get in touch <PhoneCall className="h-4 w-4" />
             </Link>

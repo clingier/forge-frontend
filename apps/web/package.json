@@ -26,6 +26,7 @@
     "@rescale/nemo": "^2.0.2",
     "@sentry/nextjs": "^10.29.0",
     "@t3-oss/env-nextjs": "^0.13.8",
+    "@types/three": "^0.183.1",
     "date-fns": "^4.1.0",
     "fumadocs-core": "^16.2.3",
     "import-in-the-middle": "^2.0.0",
@@ -37,6 +38,7 @@
     "require-in-the-middle": "8.0.1",
     "sharp": "^0.34.5",
     "shiki": "^3.19.0",
+    "three": "^0.183.2",
     "zod": "^4.1.13"
   },
   "devDependencies": {
