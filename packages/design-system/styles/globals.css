@@ -179,6 +179,12 @@
   }
 }
 
+@layer components {
+  .container {
+    @apply px-4 md:px-8;
+  }
+}
+
 /* Typography plugin */
 @utility prose {
   --tw-prose-body: var(--color-foreground);
